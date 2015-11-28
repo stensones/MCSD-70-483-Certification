@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5BBD2B73-8F31-4DAD-8305-A371634F6ECE}</ProjectGuid>
+    <ProjectGuid>{3B89A943-73CF-4F3B-892A-A7DE4EB7E2DF}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExampleCode.Tests.Unit</RootNamespace>
-    <AssemblyName>ExampleCode.Tests.Unit</AssemblyName>
+    <RootNamespace>chapter9.unit.tests</RootNamespace>
+    <AssemblyName>chapter9.unit.tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -45,21 +45,18 @@
     </When>
     <Otherwise>
       <ItemGroup>
-        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
-          <Private>False</Private>
-        </Reference>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
       </ItemGroup>
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Chapter3\StructWithNoCtorFacts.cs" />
-    <Compile Include="Chapter3\StructWithDefaultCtorFacts.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExampleCode\ExampleCode.csproj">
-      <Project>{42d00c76-c809-46a9-9b74-166ad62eb111}</Project>
-      <Name>ExampleCode</Name>
+    <ProjectReference Include="..\chapter9\chapter9.csproj">
+      <Project>{0d741127-73fa-4fd3-8f95-27cdb7c27423}</Project>
+      <Name>chapter9</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

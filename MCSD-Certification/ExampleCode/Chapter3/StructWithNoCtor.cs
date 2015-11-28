@@ -8,7 +8,7 @@
 
 	public struct StructWithNoCtor
 	{
-		private int one;
+		////private int one;
 
 		public int Two;
 
